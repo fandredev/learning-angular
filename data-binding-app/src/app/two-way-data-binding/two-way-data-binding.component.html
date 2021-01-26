@@ -1,0 +1,62 @@
+<section style="padding: 20px">
+  <mat-card>
+    <mat-card-content>
+      <form>
+        <mat-form-field style="width: 100%">
+          <input matInput placeholder="Enter your name" [(ngModel)]="name" name="name">
+        </mat-form-field>
+        <mat-form-field style="width: 100%">
+          <input matInput placeholder="Enter your password" [(ngModel)]="password" name="password">
+        </mat-form-field>
+      </form>
+    </mat-card-content>
+    <mat-card-actions>
+      <h1>
+        {{ name }} {{ password }}
+      </h1>
+    </mat-card-actions>
+  </mat-card>
+</section>
+
+<mat-divider></mat-divider>
+<mat-divider></mat-divider>
+<mat-divider></mat-divider>
+<mat-divider></mat-divider>
+<mat-divider></mat-divider>
+<mat-divider></mat-divider>
+<mat-divider></mat-divider>
+<mat-divider></mat-divider>
+<mat-divider></mat-divider>
+<mat-divider></mat-divider>
+<mat-divider></mat-divider>
+<mat-divider></mat-divider>
+<mat-divider></mat-divider>
+<mat-divider></mat-divider>
+<mat-divider></mat-divider>
+
+<section style="padding: 20px">
+  <mat-card>
+    <mat-card-content>
+      <form>
+        <mat-form-field style="width: 100%">
+          <input matInput placeholder="Enter your first name" [(ngModel)]="client.first_name" name="client_first_name">
+        </mat-form-field>
+        <mat-form-field style="width: 100%">
+          <input matInput placeholder="Enter your last name" [(ngModel)]="client.last_name" name="client_last_name">
+        </mat-form-field>
+        <mat-form-field style="width: 100%">
+          <input matInput placeholder="Enter your address" [(ngModel)]="client.address" name="client_address">
+        </mat-form-field>
+        <mat-form-field style="width: 100%">
+          <input matInput placeholder="Enter your age" [(ngModel)]="client.age" name="client_age">
+        </mat-form-field>
+      </form>
+    </mat-card-content>
+    <mat-card-actions>
+        Name: {{ client.first_name }}<br>
+        Last Name: {{ client.last_name }}<br>
+        Address: {{ client.address }}<br>
+        Age: {{ client.age }}
+    </mat-card-actions>
+  </mat-card>
+</section>
