@@ -1,0 +1,77 @@
+<mat-card>
+  <mat-card-content>
+    <ul>
+      <li *ngFor="let u of users">
+        <ng-container *ngIf="filtered">
+          {{ u.login }}
+          <div *ngFor="let f of filtered">
+            {{ f.role }}
+          </div>
+        </ng-container>
+      </li>
+    </ul>
+  </mat-card-content>
+</mat-card>
+
+<mat-divider></mat-divider>
+<mat-divider></mat-divider>
+<mat-divider></mat-divider>
+<mat-divider></mat-divider>
+<mat-divider></mat-divider>
+<mat-divider></mat-divider>
+<mat-divider></mat-divider>
+<mat-divider></mat-divider>
+
+<mat-card>
+  <mat-card-content>
+    <mat-list>
+      <mat-list-item role="listitem" *ngFor="let i of items">
+        <ng-container *ngIf="filteredItems">
+          {{ i.sold ? "Vendido ->" : "Não vendido ->" }}
+          {{ i.company_name }}
+        </ng-container>
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+  <mat-card-footer>
+    <p>
+      Peoples with buy:
+      <ng-container>
+        <ol *ngFor="let i of items">
+          <li *ngFor="let array of i.soldTo">
+            <p>
+              {{ array.name }}
+            </p>
+          </li>
+        </ol>
+      </ng-container>
+    </p>
+  </mat-card-footer>
+</mat-card>
+
+<mat-card>
+  <mat-card-content>
+    <!-- <ul>
+      <ng-container *ngFor="let user of users">
+        <li *ngIf="user.role == 'admin'">
+          <span>
+            {{ user.login }}
+          </span>
+        </li>
+      </ng-container>
+    </ul> -->
+    <mat-list>
+      <h3 mat-subheader>Users</h3>
+      <ng-container *ngFor="let u of users">
+        <mat-list-item *ngIf="u.role == 'user'">
+          <mat-icon mat-list-icon>folder</mat-icon>
+          <h4 mat-line>{{ u.login }}</h4>
+          <h4 mat-line>{{ u.role }}</h4>
+          <h4 mat-line>{{ u.lastLogin | date: "dd/MM/yyyy" }}</h4>
+          <button mat-stroked-button color="primary">Primary</button>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+      </ng-container>
+    </mat-list>
+  </mat-card-content>
+</mat-card>

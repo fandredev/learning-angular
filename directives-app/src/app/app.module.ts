@@ -19,6 +19,9 @@ import { NgIfComponent } from './ng-if/ng-if.component';
 import { SubNgIfComponent } from './ng-if/sub-ng-if/sub-ng-if.component';
 import { NgStyleComponent } from './ng-style/ng-style.component';
 import { NgSwitchComponent } from './ng-switch/ng-switch.component';
+import { NgTemplateComponent } from './ng-template/ng-template.component';
+import { NgContainerComponent } from './ng-container/ng-container.component';
+import { NgContentComponent } from './ng-content/ng-content.component';
 
 
 @NgModule({
@@ -30,7 +33,10 @@ import { NgSwitchComponent } from './ng-switch/ng-switch.component';
     SubNgIfComponent,
     NgForComponent,
     NgForFormComponent,
-    NgSwitchComponent
+    NgSwitchComponent,
+    NgTemplateComponent,
+    NgContainerComponent,
+    NgContentComponent
   ],
   imports: [
     BrowserModule,

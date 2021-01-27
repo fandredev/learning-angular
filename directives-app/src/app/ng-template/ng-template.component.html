@@ -1,0 +1,12 @@
+<mat-checkbox [(ngModel)]="enable">Enable/Disable</mat-checkbox>
+<mat-card>
+  <mat-card-content> </mat-card-content>
+</mat-card>
+<p>Before ng-template</p>
+
+<h1 *ngIf="enable; else myTemp">Enabled</h1>
+
+<ng-template #myTemp>
+  <!-- Igual ao React.Fragment, nao aparecerá na DOM-->
+  <h1>Inside Template</h1>
+</ng-template>
