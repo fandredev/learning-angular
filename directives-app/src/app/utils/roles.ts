@@ -3,10 +3,10 @@ enum Role {
   user
 }
 enum Names {
-  John = 'John',
-  Bob = 'Bob',
-  Maria = 'Maria',
-  Pet = 'Pet'
+  John = "John",
+  Bob = "Bob",
+  Maria = "Maria",
+  Pet = "Pet"
 }
 
 enum CompanyName {
