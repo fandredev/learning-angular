@@ -1,0 +1,50 @@
+<!-- <p *ngFor="let name of names">{{ name }}</p>
+
+<p *ngFor="let name of names; let i = index">{{ i }} - {{name}} </p>
+ -->
+
+<mat-card>
+  <mat-selection-list #shoes>
+    <mat-list-option *ngFor="let n of names">
+      {{ n }}
+    </mat-list-option>
+  </mat-selection-list>
+
+  <mat-card-footer>
+    Options: {{ shoes.selectedOptions.selected.length }}
+  </mat-card-footer>
+</mat-card>
+
+<mat-divider></mat-divider>
+<mat-divider></mat-divider>
+<mat-divider></mat-divider>
+<mat-divider></mat-divider>
+<mat-divider></mat-divider>
+<mat-divider></mat-divider>
+<mat-divider></mat-divider>
+<mat-divider></mat-divider>
+<mat-divider></mat-divider>
+<mat-divider></mat-divider>
+<mat-divider></mat-divider>
+
+<mat-card>
+  <mat-card-content>
+    <mat-list>
+      <h3 matSubheader>Names:</h3>
+      <mat-list-item *ngFor="let n of names">
+        <mat-icon matListIcon>person</mat-icon>
+        <h4 matLine>{{ n }}</h4>
+      </mat-list-item>
+
+      <mat-divider></mat-divider>
+
+    <!-- Array de Objetos -->
+      <h3 matSubheader>Cities:</h3>
+      <mat-list-item *ngFor="let c of cities">
+        <mat-icon matListIcon>location_city</mat-icon>
+        <h4 matLine>{{ c.name }}</h4>
+        <h4 matLine>{{ c.state }}</h4>
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+</mat-card>
