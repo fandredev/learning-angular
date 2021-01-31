@@ -1,0 +1,8 @@
+@mixin fullCenteredItems {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.horizontal-buttons {
+  @include fullCenteredItems;
+}

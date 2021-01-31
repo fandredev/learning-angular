@@ -10,9 +10,9 @@ import { ServiceBind } from './service.service';
 })
 export class InputBindingComponent implements OnInit {
 
-  @Input() public name: string = Names[Names.Cristina]
-  @Input('othername') public last_name: string = ''
-  @Input('age') public age: number = 20
+  @Input() name: string = Names[Names.Cristina]
+  @Input('othername') last_name = ''
+  @Input('aged') age = 20
 
   clients: Client[]
 
@@ -22,12 +22,12 @@ export class InputBindingComponent implements OnInit {
       { id: 2, name: Names[Names.John], age: 30 },
       { id: 3, name: Names[Names.Cristina], age: 40 },
       { id: 4, name: Names[Names.Maria], age: 50 }
-    ]
+    ];
   }
 
 
-  ngOnInit() {
-    this.serviceBind.log(this.name)
+  ngOnInit(): void {
+    this.serviceBind.log(this.name);
   }
 
 }

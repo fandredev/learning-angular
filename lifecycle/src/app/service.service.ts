@@ -3,12 +3,11 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class ServiceBind {
+export class ServiceService {
 
   constructor() { }
 
-  log(item: string): void {
-    console.log(item);
+  log(name: string): void {
+    console.log(name);
   }
-
 }

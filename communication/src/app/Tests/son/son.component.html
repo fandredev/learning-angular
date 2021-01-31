@@ -1,0 +1,7 @@
+<ol class="list-none">
+  <li *ngFor="let a of arrClient; let i = index">
+    <p>{{ i }} {{ a.age_company }}</p>
+    <p *ngIf="a.have_employees">{{ i }} {{ a.have_employees }}</p>
+    <p>{{ i }} {{ a.name }}</p>
+  </li>
+</ol>

@@ -4,7 +4,8 @@ enum Names {
   John,
   Maria
 }
-
+enum CompanyName { hub }
 export {
-  Names
+  Names,
+  CompanyName
 };
