@@ -15,7 +15,6 @@ export interface LifeCycleEvent {
   styleUrls: ['./lifecycle-child.component.scss']
 })
 export class LifecycleChildComponent implements OnInit, OnDestroy, OnChanges {
-
   @Input() name = ''
   @Input() age = 0
   @Input() food = ''
