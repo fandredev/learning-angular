@@ -3,7 +3,6 @@ import { Component, OnChanges, OnDestroy, OnInit } from '@angular/core';
 @Component({
   selector: 'app-check-child',
   templateUrl: './check-child.component.html',
-  styleUrls: ['./check-child.component.scss']
 })
 export class CheckChildComponent implements OnInit, OnDestroy, OnChanges {
 

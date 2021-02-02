@@ -4,7 +4,6 @@ import { Client } from './../client.model';
 @Component({
   selector: 'app-main-lifecycle',
   templateUrl: './main-lifecycle.component.html',
-  styleUrls: ['main-lifecycle.component.scss']
 })
 export class MainLifecycleComponent {
 
